@@ -1,0 +1,4 @@
+insert into conta_corrente (id, agencia, codigo, cpf_titular, nome_titular, saldo) values (1, '360987', '2554488866', '12345678910', 'Carlos Alberto Padua', 5000.0);
+insert into conta_corrente (id, agencia, codigo, cpf_titular, nome_titular, saldo) values (2, '360986', '2554488855', '12345678911', 'Tamires Souza Cruz', 88000.0);
+insert into conta_corrente (id, agencia, codigo, cpf_titular, nome_titular, saldo) values (3, '360985', '2554488844', '12345678912', 'Lucino Martins', 100.0);
+insert into conta_corrente (id, agencia, codigo, cpf_titular, nome_titular, saldo) values (4, '360984', '2554488833', '12345678913', 'Roberto Silva', 12300.0);

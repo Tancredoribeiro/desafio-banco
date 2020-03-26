@@ -1,0 +1,29 @@
+<p-toast [style]="{marginTop: '80px'}"></p-toast>
+<form novalidates [formGroup]="formulario" >
+    <div class="ui-g mt-2">
+      <div class="ui-g-12">
+        <span class="ui-float-label">
+          <input id="cpfDepositante" type="text" size="30" class="w-100" pInputText required formControlName="cpfDepositante" />
+          <label for="cpfDepositante">CPF do Depositante</label>
+        </span>
+        <p-message severity="error" text="O campo CPF do Depositante é obrigatório." *ngIf="verificarRequired('cpfDepositante')"></p-message>
+      </div>
+      <div class="ui-g-12">
+        <span class="ui-float-label">
+          <input id="nomeDepositante" type="text" size="30" class="w-100" pInputText required formControlName="nomeDepositante" />
+          <label for="nomeDepositante">Nome Depositante</label>
+        </span>
+        <p-message severity="error" text="O campo Nome Depositante é obrigatório." *ngIf="verificarRequired('nomeDepositante')"></p-message>
+        <p-message severity="error" text="O campo Nome Depositante deve ter pelo menos 2 caracteres." *ngIf="verificarMinLength('nomeDepositante')"></p-message>
+      </div>
+    </div>
+    <div class="ui-g py-3">
+      <div class="ui-g-12">
+        <span class="ui-float-label">
+          <input id="float-input" type="text" size="30" class="w-100" pInputText formControlName="valor" />
+          <label for="float-input">Valor</label>
+        </span>
+        <p-message severity="error" text="O campo Valor é obrigatório." *ngIf="verificarRequired('valor')"></p-message>
+      </div>
+    </div>
+  </form>
